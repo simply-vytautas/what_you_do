@@ -7,4 +7,9 @@ head
   = csrf_meta_tags
 
 body
-  = yield
+  .navbar.navbar-static-top.navbar-inverse
+    .navbar-inner
+      .container
+        a.brand href="#" WHAT YOU DO
+  .container
+    = yield
