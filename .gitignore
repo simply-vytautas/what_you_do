@@ -2,3 +2,6 @@ config/database.yml
 /.bundle
 /log/*.log
 /tmp
+custom_plan.rb
+zeus.json
+/.zeus.sock
