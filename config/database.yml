@@ -1,6 +1,6 @@
 development:
   adapter: mysql2
-  database: wud_20130320
+  database: wud_db
   encoding: utf8
   username: root
   password: pass
