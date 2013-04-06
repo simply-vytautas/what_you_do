@@ -2,17 +2,17 @@ development:
   adapter: mysql2
   database: wud_20130320
   encoding: utf8
-  username: vytautas
-  password:
-  socket: /var/run/mysqld/mysqld.sock
+  username: root
+  password: pass
+  socket: /tmp/mysql.sock
 
 test:
   adapter: mysql2
   database: wud_20130320_test
   encoding: utf8
-  username: vytautas
-  password:
-  socket: /var/run/mysqld/mysqld.sock
+  username: root
+  password: pass
+  socket: /tmp/mysql.sock
 
 production:
   adapter: sqlite3
