@@ -3,3 +3,9 @@
     | User name: #{user.name}
     br
     | User email: #{user.email}
+    - binding.pry
+  p
+    = form_tag '/user/search', method: :get do
+      = label_tag :query, 'Find user: '
+      = text_field_tag :query
+      = submit_tag 'Search'
