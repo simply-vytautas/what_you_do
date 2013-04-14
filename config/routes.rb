@@ -1,4 +1,4 @@
 WhatYouDo::Application.routes.draw do
-  root to: "main#index"
-  match ':controller/:action'
+  root to: "user#main"
+  match ":controller(/:action(/:id))(.:format)"
 end
