@@ -1,2 +1,6 @@
 - @found_users.each do |user|
-  = user.name
+  .well
+    | User name:&nbsp;
+    = link_to user.name, controller: "user", action: "show", id: user
+    br
+    | Email: #{user.email}

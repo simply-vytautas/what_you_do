@@ -1,8 +1,26 @@
 .navbar-inverse .brand {
   font-weight: bold;
-  font-size: 200%
+  font-size: 200%;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
-p.main_list_item {
-  border-style: solid;
-  border-width: 1px;
+.navbar-inner {
+  height: 50px;
+  .container {
+    margin-top: 0;
+  }
+}
+.form-search .input-append {
+  margin-top: 10px;
+  float: right;
+  .search-query {
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+  }
+  .btn {
+    -webkit-border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+  }
 }
