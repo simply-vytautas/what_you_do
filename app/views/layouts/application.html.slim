@@ -11,6 +11,7 @@ body
     .navbar-inner
       .container
         a.brand href="/" WHAT YOU DO
+        - binding.pry
         = form_tag "/user/search", :method => :get, :class => "form form-search" do
           .input-append
             = text_field_tag :search_query, nil, :placeholder => "User search...", :class => "input span2 search-query"

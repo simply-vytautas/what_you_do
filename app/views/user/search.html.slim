@@ -1,6 +1,9 @@
-- @found_users.each do |user|
-  .well
-    | User name:&nbsp;
-    = link_to user.name, controller: "user", action: "show", id: user
-    br
-    | Email: #{user.email}
+- if @found_users.empty?
+  .alert No users found:(
+- else
+  - @found_users.each do |user|
+    .well
+      | User name:&nbsp;
+      = link_to user.name, controller: "user", action: "show", id: user
+      br
+      | Email: #{user.email}

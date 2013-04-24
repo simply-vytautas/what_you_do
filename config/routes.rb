@@ -1,4 +1,6 @@
 WhatYouDo::Application.routes.draw do
   root to: "user#main"
-  match ":controller(/:action(/:id))(.:format)"
+  resources :user, only: [ :show ]
+
+  match "user/search", to: "user#search"
 end

@@ -1,6 +1,6 @@
 - @users.each do |user|
   .well
     | User name:&nbsp;
-    = link_to user.name, controller: "user", action: "show", id: user
+    = link_to user.name, user_path(user)
     br
     | Email: #{user.email}

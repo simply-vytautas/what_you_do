@@ -5,11 +5,6 @@ class UserController < ApplicationController
 
   def search
     @found_users = User.where(name: params[:search_query]).all
-    if @found_users.empty?
-      flash[:notice] = "No users found:("
-      redirect_to root_url
-    end
-
   end
 
   def show
